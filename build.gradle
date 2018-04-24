@@ -1,0 +1,29 @@
+group 'Sachs.Alex.TicTacToe'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName= "GameLogic.Runner"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'GameLogic.Runner'
+        )
+    }
+}
+
+run {
+    standardInput = System.in
+}

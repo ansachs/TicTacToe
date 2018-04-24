@@ -1,0 +1,10 @@
+
+.gradle
+
+# Package Files #
+*.jar
+
+# IntelliJ
+out
+.idea
+build
